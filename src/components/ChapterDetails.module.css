@@ -1,0 +1,132 @@
+.chapterDetails {
+  padding: 20px;
+  background-color: #f5f5f5;
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.navigationBar {
+  background-color: #e0e0e0;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.navIcon {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.chapterDetails h2 {
+  margin-top: 0;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.formFields {
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.formField {
+  text-align: left;
+}
+
+.formField label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.formField input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.chapterDetails h3 {
+  margin-top: 20px;
+  color: #555;
+  text-align: left;
+}
+
+.tableControls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.iconContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.searchContainer {
+  position: relative;
+}
+
+.searchInput {
+  padding: 5px 10px 5px 30px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.addButton {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.addButton:hover {
+  background-color: #45a049;
+}
+
+.tableContainer {
+  max-height: 300px;
+  overflow-y: auto;
+  position: relative;
+}
+
+.subcapitulosTable {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.subcapitulosTable th,
+.subcapitulosTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.subcapitulosTable th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}

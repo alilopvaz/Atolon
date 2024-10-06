@@ -1,0 +1,121 @@
+.listComponent {
+  padding: 20px;
+  background-color: #f5f5f5;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.listComponent h1 {
+  margin: 0;
+  color: #333;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.addButton {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.addButton:hover {
+  background-color: #45a049;
+}
+
+.searchContainer {
+  position: relative;
+}
+
+.searchInput {
+  padding: 5px 10px 5px 30px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.iconContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 10px 0;
+}
+
+.tableContainer {
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.actionIcons {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px 0;
+  background-color: #f5f5f5;
+}
+
+.actionIcon {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.tableWrapper {
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.dataTable {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.dataTable thead {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #f2f2f2;
+}
+
+.dataTable th,
+.dataTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.dataTable th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}

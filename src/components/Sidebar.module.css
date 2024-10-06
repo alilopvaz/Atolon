@@ -1,0 +1,178 @@
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 60px;
+  bottom: 0;
+  width: 0;
+  background-color: #333;
+  color: white;
+  overflow-x: hidden;
+  transition: width 0.3s ease-in-out;
+  z-index: 900;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar.open {
+  width: 250px;
+}
+
+.fixedHeader {
+  padding: 15px;
+  background-color: #444;
+  font-weight: bold;
+  text-align: left;
+  position: relative;
+}
+
+.collapseAll {
+  cursor: pointer;
+}
+
+.scrollableContent {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.chapterList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.chapterItem {
+  margin-bottom: 5px;
+}
+
+.chapterHeader {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color: #444;
+}
+
+.chapterHeader:hover {
+  background-color: #555;
+}
+
+.expandIcon {
+  margin-right: 10px;
+  font-size: 0.8em;
+}
+
+.chapterName {
+  flex-grow: 1;
+}
+
+.subcapituloList {
+  list-style-type: none;
+  padding-left: 25px;
+  margin: 0;
+}
+
+.subcapituloItem {
+  margin-bottom: 5px;
+}
+
+.subcapituloHeader {
+  display: flex;
+  align-items: center;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.subcapituloHeader:hover {
+  background-color: #555;
+}
+
+.subcapituloName {
+  flex-grow: 1;
+}
+
+.partidaList {
+  list-style-type: none;
+  padding-left: 25px;
+  margin: 0;
+}
+
+.partidaItem {
+  margin-bottom: 5px;
+}
+
+.partidaHeader {
+  display: flex;
+  align-items: center;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.partidaHeader:hover {
+  background-color: #555;
+}
+
+.partidaName {
+  flex-grow: 1;
+}
+
+.actividadList {
+  list-style-type: none;
+  padding-left: 25px;
+  margin: 0;
+}
+
+.actividadItem {
+  padding: 5px 15px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.actividadItem:hover {
+  background-color: #555;
+}
+
+.modal {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #555;
+  border: 1px solid #666;
+  border-radius: 4px;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.modal button {
+  display: block;
+  width: 100%;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.modal button:hover {
+  background-color: #666;
+}
+
+/* Estilo para la barra de desplazamiento */
+.scrollableContent::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollableContent::-webkit-scrollbar-track {
+  background: #444;
+}
+
+.scrollableContent::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 4px;
+}
+
+.scrollableContent::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

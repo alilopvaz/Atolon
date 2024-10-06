@@ -1,0 +1,93 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  z-index: 1000;
+}
+
+.leftSection, .rightSection {
+  display: flex;
+  align-items: center;
+}
+
+.menuButton {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-right: 15px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.homeIcon {
+  font-size: 1.2rem;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.searchContainer {
+  position: relative;
+  margin-left: 15px;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.searchInput {
+  padding: 5px 10px 5px 30px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+}
+
+.rightSection a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+.icon {
+  font-size: 1.2rem;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.iconWrapper {
+  position: relative;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #333;
+  border: 1px solid #444;
+  border-radius: 4px;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  min-width: 200px;
+}
+
+.dropdownMenu a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.dropdownMenu a:hover {
+  background-color: #444;
+}
